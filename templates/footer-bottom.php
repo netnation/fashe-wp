@@ -27,7 +27,7 @@ $images = fashe_opt( 'fashe-footer-payment-settings' );
 	$copy_text = sprintf( __( 'Copyright &copy; %s All rights reserved.', 'fashe' ), date( 'Y' ) );
 
 	?>
-	<div class="t-center footer-copy-right-text s-text8 p-t-20">
+	<div class="t-center footer-copy-right-text s-text8 p-t-5">
 		<?php echo wp_kses_post( fashe_opt( 'fashe-copyright-text-settings', $copy_text ) ); ?>
 	</div>
 </div>

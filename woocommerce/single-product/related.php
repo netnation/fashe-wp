@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( $related_products ) : ?>
 		<div class="sec-title p-b-60">
 			<h3 class="m-text5 t-center">
-				<?php esc_html_e( 'Related products', 'fashe' ); ?>
+				<?php esc_html_e( 'Related products', 'woocommerce' ); ?>
 			</h3>
 		</div>
 			<div class="wrap-slick2">
