@@ -24,7 +24,7 @@ if ( ! function_exists( 'fashe_breadcrumbs' ) ) {
 		$defaults = array(
 			'breadcrumbs_id'      => '',
 			'breadcrumbs_classes' => esc_html( 'breadcrumb' ),
-			'home_title'          => esc_html__( 'Home', 'fashe' ),
+			'home_title'          => esc_html__( '[:ar]الرئيسية[:en]Home[:]', 'fashe' ),
 		);
 		$args     = apply_filters( 'fashe_breadcrumbs_args', wp_parse_args( $args, $defaults ) );
 

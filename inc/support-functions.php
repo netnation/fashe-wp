@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 
-
+add_theme_support( 'wc-product-gallery-zoom' );
 // Post Category
 function fashe_post_cats() {
 

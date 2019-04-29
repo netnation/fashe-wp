@@ -1,4 +1,3 @@
-
 (function ($) {
     "use strict";
     
@@ -224,11 +223,11 @@
         /*[ Slick3 ]
     ===========================================================*/
 
-    var slick3 = $('.slick3');
+    var slick3 = $('.slick3').not('.slick-initialized');
 
     if( slick3.length ){
 
-        slick3.slick({
+        $('.slick3').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             fade: true,
@@ -246,12 +245,17 @@
         });
         
     }
-
+	
+	$('.slick3').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    	//console.log(currentSlide);
+    $('.slick3 .slick-slide').trigger('zoom.destroy');
+    $('.slick3 .slick-slide').zoom();
+	});
     /*[ Slick2 ]
     ===========================================================*/
     if( $('.relateproduct').length ){
 
-        $('.slick2').slick({
+        $('.slick2').not('.slick-initialized').slick({
             slidesToShow: 4,
             slidesToScroll: 4,
             infinite: true,

@@ -4,7 +4,6 @@
  * @Version    : 1.0
  * @Author     : Colorlib
  * @Author URI : http://colorlib.com/wp/
- *
  */
 
 	// Block direct access
@@ -43,27 +42,27 @@ if ( ! defined( 'FASHE_DIR_PATH' ) ) {
 	define( 'FASHE_DIR_PATH', get_parent_theme_file_path() . '/' );
 }
 
-	//Inc Folder Directory
+	// Inc Folder Directory
 if ( ! defined( 'FASHE_DIR_PATH_INC' ) ) {
 	define( 'FASHE_DIR_PATH_INC', FASHE_DIR_PATH . 'inc/' );
 }
 
-	//Fashe Libraries Folder Directory
+	// Fashe Libraries Folder Directory
 if ( ! defined( 'FASHE_DIR_PATH_LIBS' ) ) {
 	define( 'FASHE_DIR_PATH_LIBS', FASHE_DIR_PATH_INC . 'libraries/' );
 }
 
-	//Classes Folder Directory
+	// Classes Folder Directory
 if ( ! defined( 'FASHE_DIR_PATH_CLASSES' ) ) {
 	define( 'FASHE_DIR_PATH_CLASSES', FASHE_DIR_PATH_INC . 'classes/' );
 }
 
-	//Hooks Folder Directory
+	// Hooks Folder Directory
 if ( ! defined( 'FASHE_DIR_PATH_HOOKS' ) ) {
 	define( 'FASHE_DIR_PATH_HOOKS', FASHE_DIR_PATH_INC . 'hooks/' );
 }
 
-	//Widgets Folder Directory
+	// Widgets Folder Directory
 if ( ! defined( 'FASHE_DIR_PATH_WIDGET' ) ) {
 	define( 'FASHE_DIR_PATH_WIDGET', FASHE_DIR_PATH_INC . 'widgets/' );
 }
@@ -71,7 +70,6 @@ if ( ! defined( 'FASHE_DIR_PATH_WIDGET' ) ) {
 
 /**
  * Include File
- *
  */
 
 require_once FASHE_DIR_PATH_INC . 'fashe-breadcrumbs.php';
@@ -99,10 +97,6 @@ require_once FASHE_DIR_PATH_INC . 'class-epsilon-init-dashboard.php';
  * Inside this object:
  *
  * Enqueue scripts, Google font, theme support features, Epsilon Dashboard .
- *
  */
 
 $fashe = new Fashe();
-
-
-

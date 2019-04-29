@@ -29,13 +29,13 @@ global $product;
 
 	<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
 
-		<span class="sku_wrapper s-text8 m-r-35"><?php esc_html_e( 'SKU:', 'fashe' ); ?> <span class="sku"><?php echo esc_html( ( $sku = $product->get_sku() ) ? $sku : __( 'N/A', 'fashe' ) ); ?></span></span>
+		<span class="sku_wrapper s-text8 m-r-35"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo esc_html( ( $sku = $product->get_sku() ) ? $sku : __( 'N/A', 'woocommerce' ) ); ?></span></span>
 
 	<?php endif; ?>
 
-	<?php echo esc_html( wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in s-text8">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'fashe' ) . ' ', '</span>' ) ); ?>
+	<?php echo ( wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in s-text8">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ) ); ?>
 
-	<?php echo esc_html( wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'fashe' ) . ' ', '</span>' ) ); ?>
+	<?php echo ( wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ) ); ?>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 
